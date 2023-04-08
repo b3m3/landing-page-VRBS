@@ -89,7 +89,9 @@ const scrollEvents = (Scrollbar, wrapper) => {
   scrollbar.addListener((status) => {
     const offsetY = status.offset.y;
 
-    heroEvents(offsetY);
+    if (document.documentElement.clientWidth > 768) {
+      heroEvents(offsetY);
+    }
     onAnimateElems();
   })
 
