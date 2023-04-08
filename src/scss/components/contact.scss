@@ -1,0 +1,130 @@
+.contact {
+  padding-top: 7.5rem;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 3.125rem;
+  }
+
+  & h2 div {
+    display: inline-flex;
+  }
+
+  &__main {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8125rem;
+    padding: 3.125rem .9375rem 2.375rem .9375rem;
+    border-radius: 2.125rem;
+    box-shadow: $box-shadow;
+    background: $gray-gradient;
+    border: $border;
+  }
+  &__text {
+    font-family: $ff-roboto;
+    line-height: 1.875rem;
+    color: $white-08;
+    padding-bottom: 1rem;
+  }
+  &__form {
+    background: $gray-gradient-50;
+    box-shadow: $box-shadow;
+    border-radius: 4.375rem;
+    max-width: 53.75rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem;
+    height: 5rem;
+    transition: .3s;
+
+    @media screen and (max-width: 36.25rem) {
+      flex-direction: column;
+      background: none;
+      box-shadow: none;
+      height: unset;
+      gap: .9375rem;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding-left: 2.125rem;
+    outline: none;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-family: $ff-rubik;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    color: $white;
+    border-radius: 4.375rem;
+    opacity: 0.9;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    @media screen and (max-width: 36.25rem) {
+      height: 3.125rem;
+      background: $gray-gradient-50;
+      box-shadow: $box-shadow;
+      border-radius: 4.375rem;
+      padding: 0 1.25rem;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .9375rem 3.0625rem .9375rem 1.375rem;
+    border-radius: 6.25rem;
+
+    @media screen and (max-width: 36.25rem) {
+      width: 100%;
+      padding: .625rem 3.0625rem .625rem 1.375rem;
+      justify-content: center;
+    }
+
+    & img {
+      animation: scale .6s linear;
+    }
+
+    & span {
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+  }
+}
+
+
+@keyframes shake {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg);}
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg);}
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg) scale(1.03);}
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg) scale(1.06);}
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg) scale(1.1); color: #e63333}
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg) scale(1.06);}
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg) scale(1.03);}
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg);}
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg);}
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg);}
+  }
+
+@keyframes air {
+  0% {transform: scale(1) translate(0) rotate(0);}
+  33% {transform: scale(1.5) translate(50px, -50px) rotate(25deg);}
+  66% {transform: scale(2) translate(100px, -100px) rotate(-60deg);opacity: 1;}
+  100% {transform: scale(2.5) translate(50px, -125px) rotate(-125deg);opacity: 0;}
+}
+
+@keyframes scale {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
+}

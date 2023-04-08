@@ -1,0 +1,32 @@
+._elips {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  filter: blur(100px);
+  border-radius: 50%;
+  transition: 3.5s ease-in-out;
+}
+
+._big {
+  height: 44vmin;
+  width: 21vmax;
+}
+
+._small {
+  height: 22vmin;
+  width: 10.5vmax;
+}
+
+._blue {
+  background: rgb(36, 99, 235, .6);
+}
+
+._violet {
+  background: rgb(79, 63, 217, .6);
+}
+
+@media screen and (max-width: 1024px) {
+  ._elips, ._big, ._small, ._blue, ._violet {
+    display: none;
+  }
+}

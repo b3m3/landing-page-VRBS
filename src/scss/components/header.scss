@@ -1,0 +1,87 @@
+.header {
+  &__main {
+    padding-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.75rem;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 1.25rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: .4375rem;
+
+    & h3 {
+      pointer-events: none;
+    }
+  }
+  &__navigate {
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+
+    @media screen and (max-width: 1024px) {
+      position: absolute;
+      overflow: hidden;
+      z-index: 10;
+      height: 0;
+      left: .9375rem;
+      right: .9375rem;
+      top: 4.375rem;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      border-radius: .9375rem;
+      background: #412f8fbe;
+      transition: .4s ease-out;
+
+      &.active {
+        height: 12.5rem;
+        padding: .9375rem 0;
+      }
+    }
+  }
+}
+
+.logo-header {
+  &__name {
+    font-family: $ff-rubik;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.navigate-header {
+  &__list {
+    display: flex;
+    gap: 3.75rem;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      gap: .9375rem;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    color: $gray-300;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    padding: .75rem 2.0625rem .75rem 1.5rem;
+    border-radius: .3125rem;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

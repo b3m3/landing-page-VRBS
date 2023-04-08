@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+
+  &__main {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template: auto / minmax(auto, 34.125rem) 1fr;
+    gap: 1.75rem;
+
+    @media screen and (max-width: 1024px) {
+      grid-template: auto auto / 1fr;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 3.125rem;
+      max-width: 51.875rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  &__image {
+    position: relative;
+    margin-right: -3.75rem;
+    height: 45vmax;
+    max-height: 41.25rem;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+  }
+}
+.info-hero {
+  &__text {
+    font-weight: 500;
+    font-size: .9375rem;
+    line-height: 1.875rem;
+    color: $gray-300;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+  &__join {
+    padding: 1.25rem 2.5rem;
+    border-radius: 6px;
+  }
+  &__watch {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    line-height: 21px;
+    color: $white-08;
+    
+    & img {
+      transition: .3s transform;
+    }
+
+    &:hover {
+      width: 132px;
+      & img {
+        transform: translateX(2.8125rem) scale(1.5);
+      }
+      & span {
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+}
+
+.image-hero {
+  &__item {
+    position: absolute;
+    object-fit: contain;
+    &_main {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+    &_1 {
+      top: 42%;
+      left: 12%;
+      width: 18%;
+      height: 18%;
+    }
+    &_2 {
+      top: 16%;
+      left: 20%;
+      width: 16%;
+      height: 16%;
+    }
+    &_3 {
+      top: 8%;
+      left: 40%;
+      width: 15.5%;
+      height: 15.5%;
+    }
+    &_4 {
+      top: 14%;
+      left: 52%;
+      width: 15.5%;
+      height: 15.5%;
+    }
+    &_5 {
+      top: 26%;
+      right: 17%;
+      width: 17%;
+      height: 17%;
+    }
+    &_6 {
+      top: 48%;
+      right: 10%;
+      width: 25%;
+      height: 15%;
+    }
+  }
+}

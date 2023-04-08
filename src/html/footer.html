@@ -1,0 +1,95 @@
+<footer class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__top top-footer">
+
+        <div class="top-footer__info">
+          <ul class="top-footer__list">
+            <li class="top-footer__item">
+              <a href="#">
+                <img class="top-footer__logo-image" src="@img/logo.svg" alt="logo">
+                <h3 class="top-footer__logo-name">Zone.</h3>
+              </a>
+            </li>
+            <li class="top-footer__item">
+              <a class="top-footer__link" href="https://goo.gl/maps/tY1NPvS681CgJgvs7">
+                <img class="top-footer__icon" src="@img/footer/location.svg" alt="logo">
+                <p class="top-footer__name">Dhaka, Bangladesh</p>
+              </a>
+            </li>
+            <li class="top-footer__item">
+              <a class="top-footer__link" href="tel: 0900009999">
+                <img class="top-footer__icon" src="@img/footer/calling.svg" alt="logo">
+                <p class="top-footer__name">0900009999</p>
+              </a>
+            </li>
+            <li class="top-footer__item">
+              <a class="top-footer__link" href="mailto: mail@info.com">
+                <img class="top-footer__icon" src="@img/footer/message.svg" alt="logo">
+                <p class="top-footer__name">mail@info.com</p>
+              </a>
+            </li>
+            <li class="top-footer__item">
+              <ul class="top-footer__socials-list">
+                <li class="top-footer__socials-item">
+                  <a class="top-footer__socials-link" href="#">
+                    <img src="@img/footer/ic-facebook.svg" alt="icon">
+                  </a>
+                </li>
+                <li class="top-footer__socials-item">
+                  <a class="top-footer__socials-link" href="#">
+                    <img src="@img/footer/ic-twitter.svg" alt="icon">
+                  </a>
+                </li>
+                <li class="top-footer__socials-item">
+                  <a class="top-footer__socials-link" href="#">
+                    <img src="@img/footer/ic-instagram.svg" alt="icon">
+                  </a>
+                </li>
+                <li class="top-footer__socials-item">
+                  <a class="top-footer__socials-link" href="#">
+                    <img src="@img/footer/ic-pinterset.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        @@include('./module/footer-list.html', {
+        "title": "Service", "link_1": "Order Management", "link_2": "Social Assistant",
+        "link_3": "Crypto Platform", "link_4": "Analyzer of the News"})
+        @@include('./module/footer-list.html', {
+        "title": "Company", "link_1": "About Us", "link_2": "News",
+        "link_3": "Our trusted partner", "link_4": "New users FAQ"})
+        @@include('./module/footer-list.html', {
+        "title": "Supports", "link_1": "Help center", "link_2": "Feedbcak",
+        "link_3": "Contact us", "link_4": "Terms conditins"})
+        @@include('./module/footer-list.html', {
+        "title": "Resources", "link_1": "Download app", "link_2": "Blog",
+        "link_3": "What’s new", "link_4": "Sitemap"})
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="bottom-footer">
+          <p class="bottom-footer__copyright">© 2021 Zone. - All rights reserved.</p>
+
+          <ul class="bottom-footer__list">
+            <li class="bottom-footer__item">
+              <a href="bottom-footer__link">Privacy</a>
+            </li>
+            <li class="bottom-footer__item">
+              <a href="bottom-footer__link">Security</a>
+            </li>
+            <li class="bottom-footer__item">
+              <a href="bottom-footer__link">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,103 @@
+.services {
+  &__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+    padding-top: 7.9375rem;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 3.125rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    max-width: 36.6875rem;
+    margin: 0 auto;
+  }
+
+  &__body {
+    display: grid;
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(17.8125rem, 1fr));
+  }
+}
+
+.body-service {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    box-shadow: $box-shadow;
+    border-radius: 2.125rem;
+    background: $gray-gradient;
+    border: $border;
+    padding: 2.3125rem 1.4375rem 1.875rem 1.4375rem;
+  }
+
+  &__icon {
+    width: 4.625rem;
+    height: 4.625rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(20deg);
+    &_1 {
+      background: $violet-gradient;
+    }
+    &_2 {
+      background: $pink-gradient;
+    }
+    &_3 {
+      background: $aquamarine-gradient;
+    }
+    &_4 {
+      background: $green-gradient;
+    }
+    &_5 {
+      background: $amethyst-gradient;
+    }
+    &_6 {
+      background: $violet-gradient;
+    }
+  }
+
+  &__title {
+    padding-top: 1.1875rem;
+  }
+
+  &__text {
+    padding-top: 1.0625rem;
+    flex: 1 0 auto;
+    transition: .4s;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin-top: 1.5rem;
+    transition: .3s;
+
+    &:hover {
+      & img {
+        transform: scale(1.4) translateX(.625rem);
+      }
+    }
+
+    & img {
+      transition: .3s;
+    }
+
+    & span {
+      line-height: 1.625rem;
+    }
+  }
+}
